@@ -1,6 +1,4 @@
 FROM node:latest
-COPY package*.json ./
-RUN npm install
-COPY . .
+COPY hello.js
 EXPOSE 8080
 CMD [ "node", "hello.js" ]
