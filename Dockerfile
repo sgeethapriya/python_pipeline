@@ -1,7 +1,7 @@
 FROM node:latest
-COPY hello.js
+COPY hello.js ./
 EXPOSE 8080
-CMD [ "node", "hello.js" ]
+CMD [ "node", "./hello.js" ]
 
 
 
