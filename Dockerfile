@@ -1,6 +1,6 @@
-FROM python:latest
-COPY main.py ./
+FROM node:latest
+COPY package*.json ./
+RUN npm install
+COPY . .
 EXPOSE 8080
-CMD [ "python", "./main.py"]
-
-
+CMD [ "node", "hello.js" ]
